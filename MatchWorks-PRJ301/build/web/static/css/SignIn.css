@@ -1,0 +1,161 @@
+:root{
+    --mw-text:#0b1b3a;
+    --mw-muted:#64748b;
+    --mw-border:#e7eefc;
+    --mw-blue:#2f7bff;
+    --mw-blue2:#1b5cff;
+    --mw-shadow-lg: 0 18px 40px rgba(15, 23, 42, .10);
+
+    --mw-header-h:72px;
+    --mw-radius-lg:20px;
+    --mw-radius-md:14px;
+
+    --mw-bp:980px;
+
+    /* drawer */
+    --mw-drawer-w: 78vw;
+    --mw-drawer-max: 360px;
+}
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    height: 100vh;
+    background: #f5f6fa;
+}
+
+/* WRAPPER */
+.register-wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+/* ========== LEFT: 60% ========== */
+.register-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.register-infor {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* TITLE */
+.register-infor h2 {
+    font-size: 26px;
+    color: #20479C;
+    margin-bottom: 8px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+}
+
+/* SUBTITLE */
+.subtitle {
+    font-size: 14px;
+    color: #20479C;
+    margin-bottom: 28px;
+}
+
+/* FORM */
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #20479C;
+}
+
+/* POLICY */
+.policy {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.policy input {
+    margin-top: 3px;
+}
+
+.policy a {
+    color: #20479C;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 12px;
+    background: var(--mw-blue);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--mw-blue);
+}
+
+/* LOGIN LINK */
+.login-link {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #20479C;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* ========== RIGHT: 40% ========== */
+.register-right {
+    width: 40%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.register-right img.photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 992px) {
+    .register-right {
+        display: none;
+    }
+
+    .register-left .register-infor {
+        padding: 0;
+        width: 100%;
+    }
+}
